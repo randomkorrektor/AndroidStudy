@@ -20,16 +20,17 @@ public class ChoiceActivity extends AppCompatActivity {
         Intent answerIntent = new Intent();
         switch (view.getId()){
             case R.id.radioButton1:
-                answerIntent.putExtra(THIEF, R.string.answer1);
+                answerIntent.putExtra(THIEF, "Очень");
                 break;
             case R.id.radioButton2:
-                answerIntent.putExtra(THIEF,R.string.answer2);
+                answerIntent.putExtra(THIEF,"Не очень");
                 break;
             case R.id.radioButton3:
-                answerIntent.putExtra(THIEF,R.string.answer3);
-                default:
-                    answerIntent.putExtra(THIEF,"Fuck!");
-                    break;
+                answerIntent.putExtra(THIEF,"По самые уши");
+                break;
+            default:
+                answerIntent.putExtra(THIEF,"Fuck!");
+                break;
         }
         setResult(RESULT_OK,answerIntent);
         finish();

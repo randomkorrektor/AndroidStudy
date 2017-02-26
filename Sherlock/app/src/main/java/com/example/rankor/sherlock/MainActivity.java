@@ -25,14 +25,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode,resultCode,data);
 
-        TextView infoTextView = (TextView)findViewById(R.id.textViewInfo);
+        TextView infoTextView = (TextView)findViewById(R.id.textViewAnswer);
 
         if(requestCode == CHOOSE_THIEF){
-            String ans = data.getStringExtra(ChoiceActivity.THIEF);
+            if (resultCode == -1){
+                String ans = data.getStringExtra(ChoiceActivity.THIEF);
 
-            infoTextView.setText(ans);
-        }else {
-            infoTextView.setText("");
+                infoTextView.setText(ans);
+            }else {
+                infoTextView.setText("");
+            }
         }
+
     }
 }
