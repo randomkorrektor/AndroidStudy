@@ -13,4 +13,6 @@
     <string name="translate_button">Передать</string>
     <string name="translate_title">Передача данных</string>
     <string name="second_activity">Second activity</string>
+    <string name="message">Сообщение</string>
+    <string name="name">Имя</string>
 </resources>
