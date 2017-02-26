@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sherlock</string>
+    <string name="choice_title">Выбор</string>
+    <string name="choice_button">Сделай выбор</string>
+    <string name="question">Какова глубина кроличьей норы?</string>
+    <string name="answer1">Очень</string>
+    <string name="answer2">Не очень</string>
+    <string name="answer3">По самые уши</string>
+    <string name="answer_info">Выберите ответ</string>
+</resources>
